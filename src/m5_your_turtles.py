@@ -39,14 +39,20 @@ for k in range(10):
 
   sam= rg.SimpleTurtle()
   sam.pen = rg.Pen('green', 5)
-  sam.speed = 75
-  sam.draw_circle(size)
+  sam.speed = 1000
+  sam.draw_regular_polygon(8,size)
 
   ben= rg.SimpleTurtle()
-  sam.pen = rg.Pen('blue', 5)
-  sam.speed = 75
-  sam.draw_regular_polygon(8,size)
+  ben.pen = rg.Pen('blue', 5)
+  ben.speed = 1000
+  ben.draw_regular_polygon(8,size + 3)
   size = size + 10
+
+  nick= rg.SimpleTurtle()
+  nick.pen = rg.Pen('red', 5)
+  nick.speed = 1000
+  nick.draw_regular_polygon(8, size + 6)
+
 
 
 
